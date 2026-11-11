@@ -1,13 +1,15 @@
-# Werkstatt Burow (vormals BFL): Checkliste & Profilschärfung
+# BFL Burow – Werkstatt, Landtechnik & Gartengeräte
+### Checkliste & Profilschärfung für Google und Website
 
-Diese Übersicht fasst alle neuen Erkenntnisse aus dem Treffen zusammen und dient als Grundlage für die **Website** und das **Google Business-Profil**.
+Diese Übersicht fasst alle Erkenntnisse zusammen und dient als Grundlage für die **Website** und das **Google Business-Profil**.
 
 ---
 
-## 🏢 1. Basis-Stammdaten & Eigentümerwechsel
-* **Firmenname (Neu/Übergang):** **Werkstatt Burow** (vormals BFL Burower Fahrzeug- und Landtechnik GmbH)
+## 🏢 1. Basis-Stammdaten & Führung
+* **Offizieller Firmenname:** **BFL Burower Fahrzeug- und Landtechnik GmbH**
+* **Markenauftritt:** **BFL Burow – Werkstatt, Landtechnik & Gartengeräte**
+* **Geschäftsführer:** Otto Günther
 * **Werkstattleitung / Nachfolger:** Markus (Kfz-Mechaniker)
-* **Bisheriger Inhaber:** Otto Günther (Übergabephase / Ruhestand)
 * **Adresse:** Seltzer Straße 4, 17089 Burow
 * **Telefon (Festnetz Werkstatt):** 03965 257872
 * **Mobil / WhatsApp (Otto Günther):** +49 171 7235230 (0171 7235230)
