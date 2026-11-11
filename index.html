@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="de" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Werkstatt Burow | Kfz-Werkstatt, Gartentechnik & Maschinenverleih</title>
+  <meta name="description" content="Werkstatt Burow (vormals BFL): Ihre Kfz-Werkstatt, Schleiferei, Hydraulik- & Reifenservice, Baggerarbeiten sowie Fachhandel für Kress, Solo & Herkules in 17089 Burow.">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#f0fdf4',
+              100: '#dcfce7',
+              500: '#16a34a',
+              600: '#15803d',
+              700: '#166534',
+              800: '#14532d',
+              900: '#052e16',
+            },
+            accent: {
+              500: '#f59e0b',
+              600: '#d97706',
+              700: '#b45309',
+            },
+            navy: {
+              800: '#1e293b',
+              900: '#0f172a',
+              950: '#020617',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    .bg-grid-pattern {
+      background-image: radial-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+      background-size: 24px 24px;
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased font-sans">
+
+  <!-- TOP BAR: Notdienst & Erreichbarkeit -->
+  <header class="bg-navy-950 text-slate-200 text-xs sm:text-sm py-2 px-4 border-b border-slate-800 sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+      <div class="flex items-center space-x-3 sm:space-x-4">
+        <span class="inline-flex items-center text-amber-400 font-semibold">
+          <i data-lucide="wrench" class="w-3.5 h-3.5 mr-1.5"></i> Werkstatt Burow
+        </span>
+        <span class="text-slate-400 hidden sm:inline">|</span>
+        <span class="text-slate-300 flex items-center">
+          <i data-lucide="map-pin" class="w-3.5 h-3.5 mr-1 text-slate-400"></i> Seltzer Str. 4, 17089 Burow
+        </span>
+        <span class="hidden md:inline text-slate-400">|</span>
+        <span class="text-slate-300 hidden md:flex items-center">
+          <i data-lucide="clock" class="w-3.5 h-3.5 mr-1 text-slate-400"></i> Mo–Fr: 07:00–17:00 Uhr
+        </span>
+      </div>
+      <div class="flex items-center space-x-3">
+        <a href="tel:03965257872" class="flex items-center text-white hover:text-brand-500 font-bold transition">
+          <i data-lucide="phone-call" class="w-3.5 h-3.5 mr-1.5 text-brand-500"></i> 03965 257872
+        </a>
+        <a href="https://wa.me/491717235230" target="_blank" rel="noopener noreferrer" class="inline-flex items-center bg-brand-600 hover:bg-brand-700 text-white px-3 py-0.5 rounded-full text-xs font-semibold transition shadow-sm">
+          <i data-lucide="message-circle" class="w-3.5 h-3.5 mr-1"></i> WhatsApp
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- NAVIGATION -->
+  <nav class="bg-white shadow-sm border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-20 items-center">
+        <!-- Logo -->
+        <a href="#" class="flex items-center space-x-3 group">
+          <div class="w-12 h-12 bg-navy-900 rounded-xl flex items-center justify-center text-brand-500 font-black text-2xl tracking-tighter border-2 border-brand-500 shadow-md group-hover:scale-105 transition-transform">
+            WB
+          </div>
+          <div>
+            <span class="block text-xl font-black tracking-tight text-navy-900 leading-none">Werkstatt Burow</span>
+            <span class="text-[11px] text-slate-500 font-semibold uppercase tracking-wider">vormals BFL Fahrzeug- & Landtechnik</span>
+          </div>
+        </a>
+
+        <!-- Desktop Menu -->
+        <div class="hidden lg:flex items-center space-x-7 text-sm font-semibold text-slate-700">
+          <a href="#kfz-werkstatt" class="hover:text-brand-600 flex items-center transition">
+            <i data-lucide="car" class="w-4 h-4 mr-1 text-brand-600"></i> Kfz-Werkstatt
+          </a>
+          <a href="#bagger-verleih" class="hover:text-brand-600 flex items-center transition">
+            <i data-lucide="truck" class="w-4 h-4 mr-1 text-brand-600"></i> Bagger & Verleih
+          </a>
+          <a href="#gartengeraete" class="hover:text-brand-600 flex items-center transition">
+            <i data-lucide="sparkles" class="w-4 h-4 mr-1 text-brand-600"></i> Kress · Solo · Herkules
+          </a>
+          <a href="#services" class="hover:text-brand-600 flex items-center transition">
+            <i data-lucide="scissors" class="w-4 h-4 mr-1 text-brand-600"></i> Schleiferei & Hydraulik
+          </a>
+          <a href="#kontakt" class="hover:text-brand-600 transition">Kontakt & Anfahrt</a>
+        </div>
+
+        <!-- Quick CTA Button -->
+        <div class="flex items-center space-x-3">
+          <a href="tel:03965257872" class="hidden sm:inline-flex items-center bg-navy-900 hover:bg-navy-800 text-white px-4 py-2.5 rounded-lg text-sm font-semibold transition shadow hover:shadow-md">
+            <i data-lucide="calendar" class="w-4 h-4 mr-2 text-amber-400"></i> Termin anfragen
+          </a>
+          <a href="tel:03965257872" class="lg:hidden p-2.5 rounded-lg bg-brand-600 text-white">
+            <i data-lucide="phone" class="w-5 h-5"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="relative bg-navy-900 text-white overflow-hidden py-16 lg:py-24 bg-grid-pattern">
+    <div class="absolute inset-0 bg-gradient-to-r from-navy-950/95 via-navy-900/85 to-navy-950/90 pointer-events-none"></div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <div class="lg:col-span-7 space-y-6">
+          <div class="inline-flex items-center space-x-2 bg-brand-900/80 border border-brand-500/40 text-brand-300 px-3.5 py-1.5 rounded-full text-xs font-bold tracking-wide uppercase">
+            <span class="w-2 h-2 rounded-full bg-brand-500 animate-pulse"></span>
+            <span>Neuer Schwung in Burow · Werkstattleitung Markus</span>
+          </div>
+
+          <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight leading-tight">
+            Kfz-Meisterwerkstatt.<br>
+            <span class="text-brand-500">Baggerarbeiten & Verleih.</span><br>
+            Gartentechnik vom Fachmann.
+          </h1>
+
+          <p class="text-base sm:text-lg text-slate-300 max-w-2xl leading-relaxed">
+            Willkommen bei der <strong>Werkstatt Burow</strong> (vormals BFL). Unter neuer Werkstattleitung bieten wir Ihnen ehrlichen Kfz-Service aller Marken, professionelle Baggerarbeiten, Schleifservice für Messer & Scheren sowie Fachberatung für Qualitäts-Gartengeräte von <strong>Kress</strong>, <strong>Solo</strong> und <strong>Herkules</strong>.
+          </p>
+
+          <!-- Buttons -->
+          <div class="flex flex-wrap gap-4 pt-2">
+            <a href="tel:03965257872" class="inline-flex items-center justify-center bg-brand-600 hover:bg-brand-500 text-white font-bold px-6 py-3.5 rounded-xl shadow-lg hover:shadow-brand-600/30 transition text-sm sm:text-base">
+              <i data-lucide="phone-call" class="w-5 h-5 mr-2"></i> 03965 257872 anrufen
+            </a>
+            <a href="#bagger-verleih" class="inline-flex items-center justify-center bg-white/10 hover:bg-white/20 text-white font-semibold px-6 py-3.5 rounded-xl backdrop-blur-sm border border-white/20 transition text-sm sm:text-base">
+              <i data-lucide="truck" class="w-5 h-5 mr-2 text-amber-400"></i> Bagger & Mietpark
+            </a>
+            <a href="#gartengeraete" class="inline-flex items-center justify-center bg-white/10 hover:bg-white/20 text-white font-semibold px-6 py-3.5 rounded-xl backdrop-blur-sm border border-white/20 transition text-sm sm:text-base">
+              <i data-lucide="sparkles" class="w-5 h-5 mr-2 text-brand-400"></i> Kress / Solo / Herkules
+            </a>
+          </div>
+
+          <!-- Feature Bullets -->
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-6 border-t border-slate-800 text-xs text-slate-300">
+            <div class="flex items-center space-x-1.5">
+              <i data-lucide="check-circle" class="w-4 h-4 text-brand-400 flex-shrink-0"></i>
+              <span>Kfz aller Fabrikate</span>
+            </div>
+            <div class="flex items-center space-x-1.5">
+              <i data-lucide="check-circle" class="w-4 h-4 text-brand-400 flex-shrink-0"></i>
+              <span>Bagger mit Fahrer</span>
+            </div>
+            <div class="flex items-center space-x-1.5">
+              <i data-lucide="check-circle" class="w-4 h-4 text-brand-400 flex-shrink-0"></i>
+              <span>Messer-Schleiferei</span>
+            </div>
+            <div class="flex items-center space-x-1.5">
+              <i data-lucide="check-circle" class="w-4 h-4 text-brand-400 flex-shrink-0"></i>
+              <span>Hydraulik-Sofortdienst</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Schnell-Kontakt / Anfrage Card -->
+        <div class="lg:col-span-5">
+          <div class="bg-white rounded-2xl p-6 sm:p-8 text-slate-900 shadow-2xl border border-slate-200">
+            <div class="flex items-center justify-between mb-4 pb-3 border-b border-slate-100">
+              <div>
+                <h3 class="text-lg font-bold text-navy-900">Direktanfrage an die Werkstatt</h3>
+                <p class="text-xs text-slate-500">Schnelle Hilfe von Markus & Team</p>
+              </div>
+              <span class="p-2 bg-brand-50 text-brand-700 rounded-lg">
+                <i data-lucide="wrench" class="w-6 h-6"></i>
+              </span>
+            </div>
+
+            <div class="space-y-4">
+              <div>
+                <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Ihr Anliegen</label>
+                <select class="w-full bg-slate-50 border border-slate-300 rounded-lg px-3.5 py-2.5 text-sm focus:ring-2 focus:ring-brand-500 focus:outline-none">
+                  <option>Pkw-Reparatur / Inspektion / TÜV</option>
+                  <option>Baggerarbeiten (mit Fahrer)</option>
+                  <option>Maschinenverleih (Minibagger, Rüttelplatte)</option>
+                  <option>Gartengeräte Beratung (Kress, Solo, Herkules)</option>
+                  <option>Schleifdienst (Messer, Scheren, Ketten)</option>
+                  <option>Hydraulikschlauch Verpressung</option>
+                  <option>Reifenservice (Pkw, Transporter, Agrar)</option>
+                </select>
+              </div>
+
+              <div>
+                <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Ihr Name / Telefonnummer</label>
+                <input type="text" placeholder="z. B. 0170 1234567 oder Familie Meier" class="w-full bg-slate-50 border border-slate-300 rounded-lg px-3.5 py-2.5 text-sm focus:ring-2 focus:ring-brand-500 focus:outline-none">
+              </div>
+
+              <div class="pt-2">
+                <a href="tel:03965257872" class="w-full flex items-center justify-center bg-navy-900 hover:bg-navy-800 text-white font-bold py-3.5 rounded-xl transition shadow text-sm">
+                  <i data-lucide="phone-forwarded" class="w-4 h-4 mr-2 text-brand-400"></i> Jetzt anrufen: 03965 257872
+                </a>
+                <a href="https://wa.me/491717235230" target="_blank" class="w-full mt-2.5 flex items-center justify-center bg-brand-600 hover:bg-brand-700 text-white font-bold py-3 rounded-xl transition shadow text-sm">
+                  <i data-lucide="message-circle" class="w-4 h-4 mr-2"></i> Per WhatsApp schreiben
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- DIE 5 KERN-BEREICHE DER NEUEN WERKSTATT BUROW -->
+  <section class="py-12 bg-white border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-2 md:grid-cols-5 gap-4">
+        
+        <a href="#kfz-werkstatt" class="p-4 rounded-xl bg-slate-50 border border-slate-200 hover:border-brand-500 transition text-center group">
+          <i data-lucide="car" class="w-8 h-8 mx-auto text-brand-600 mb-2 group-hover:scale-110 transition-transform"></i>
+          <span class="block font-bold text-navy-900 text-sm">Kfz-Werkstatt</span>
+          <span class="text-[11px] text-slate-500">Alle Marken & TÜV</span>
+        </a>
+
+        <a href="#bagger-verleih" class="p-4 rounded-xl bg-slate-50 border border-slate-200 hover:border-brand-500 transition text-center group">
+          <i data-lucide="truck" class="w-8 h-8 mx-auto text-amber-600 mb-2 group-hover:scale-110 transition-transform"></i>
+          <span class="block font-bold text-navy-900 text-sm">Bagger & Verleih</span>
+          <span class="text-[11px] text-slate-500">Mit Fahrer & Miete</span>
+        </a>
+
+        <a href="#gartengeraete" class="p-4 rounded-xl bg-slate-50 border border-slate-200 hover:border-brand-500 transition text-center group">
+          <i data-lucide="bot" class="w-8 h-8 mx-auto text-emerald-600 mb-2 group-hover:scale-110 transition-transform"></i>
+          <span class="block font-bold text-navy-900 text-sm">Gartentechnik</span>
+          <span class="text-[11px] text-slate-500">Kress · Solo · Herkules</span>
+        </a>
+
+        <a href="#services" class="p-4 rounded-xl bg-slate-50 border border-slate-200 hover:border-brand-500 transition text-center group">
+          <i data-lucide="scissors" class="w-8 h-8 mx-auto text-blue-600 mb-2 group-hover:scale-110 transition-transform"></i>
+          <span class="block font-bold text-navy-900 text-sm">Schleiferei</span>
+          <span class="text-[11px] text-slate-500">Messer, Scheren, Ketten</span>
+        </a>
+
+        <a href="#services" class="p-4 rounded-xl bg-slate-50 border border-slate-200 hover:border-brand-500 transition text-center group col-span-2 md:col-span-1">
+          <i data-lucide="disc" class="w-8 h-8 mx-auto text-indigo-600 mb-2 group-hover:scale-110 transition-transform"></i>
+          <span class="block font-bold text-navy-900 text-sm">Reifen & Hydraulik</span>
+          <span class="text-[11px] text-slate-500">Sofort-Service</span>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- BEREICH 1: KFZ-WERKSTATT (MARKUS' KERNKOMPETENZ) -->
+  <section id="kfz-werkstatt" class="py-16 bg-white border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+        
+        <div class="lg:col-span-7 space-y-5">
+          <div class="inline-flex items-center space-x-2 text-brand-700 bg-brand-100 px-3 py-1 rounded-full text-xs font-bold uppercase">
+            <i data-lucide="shield-check" class="w-3.5 h-3.5"></i> Meisterlich & Ehrlich
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-black text-navy-900">
+            Kfz-Meisterwerkstatt für alle Fabrikate
+          </h2>
+          <p class="text-slate-600 text-base leading-relaxed">
+            Als gelernter Kfz-Mechaniker legt <strong>Markus</strong> größten Wert auf handwerkliche Präzision, moderne Fehlerdiagnose und transparente Absprachen. Wir warten und reparieren Pkw, Transporter und Anhänger aller Marken nach strengen Herstellervorgaben.
+          </p>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+            <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
+              <h4 class="font-bold text-navy-900 text-sm mb-1 flex items-center">
+                <i data-lucide="badge-check" class="w-4 h-4 mr-2 text-brand-600"></i> TÜV & AU Vor-Ort
+              </h4>
+              <p class="text-xs text-slate-500">Regelmäßige Prüftage im Haus inkl. gründlicher Durchsicht im Vorfeld.</p>
+            </div>
+
+            <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
+              <h4 class="font-bold text-navy-900 text-sm mb-1 flex items-center">
+                <i data-lucide="cpu" class="w-4 h-4 mr-2 text-brand-600"></i> Diagnose & Elektronik
+              </h4>
+              <p class="text-xs text-slate-500">Fehlerspeicher auslesen, Steuergeräte prüfen & Sensorik instandsetzen.</p>
+            </div>
+
+            <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
+              <h4 class="font-bold text-navy-900 text-sm mb-1 flex items-center">
+                <i data-lucide="disc" class="w-4 h-4 mr-2 text-brand-600"></i> Bremsen & Fahrwerk
+              </h4>
+              <p class="text-xs text-slate-500">Beläge, Scheiben, Stoßdämpfer und Lenkungsteile in Erstausrüsterqualität.</p>
+            </div>
+
+            <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
+              <h4 class="font-bold text-navy-900 text-sm mb-1 flex items-center">
+                <i data-lucide="thermometer-snowflake" class="w-4 h-4 mr-2 text-brand-600"></i> Klimaservice
+              </h4>
+              <p class="text-xs text-slate-500">Wartung, Dichtheitsprüfung & Kältemittel-Befüllung (R134a & R1234yf).</p>
+            </div>
+          </div>
+
+          <div class="pt-2">
+            <a href="tel:03965257872" class="inline-flex items-center bg-navy-900 hover:bg-navy-800 text-white font-bold px-5 py-3 rounded-xl transition text-sm">
+              <i data-lucide="calendar" class="w-4 h-4 mr-2 text-amber-400"></i> Werkstatt-Termin vereinbaren: 03965 257872
+            </a>
+          </div>
+        </div>
+
+        <div class="lg:col-span-5">
+          <div class="bg-gradient-to-br from-slate-100 to-slate-200 rounded-2xl p-6 border border-slate-200 space-y-4">
+            <h3 class="text-lg font-bold text-navy-900">Reifenservice für Pkw, Transporter & Agrar</h3>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              Vom saisonalen Radwechsel über Reifenreparaturen bis hin zu Neureifen aller namhaften Hersteller. Auch Montage von Transporter- und Landwirtschaftsreifen!
+            </p>
+            <ul class="text-xs text-slate-700 space-y-2">
+              <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 mr-2 text-brand-600"></i> Radwechsel & Auswuchten</li>
+              <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 mr-2 text-brand-600"></i> Fachgerechte Reifenreparatur (Vulkanisation)</li>
+              <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 mr-2 text-brand-600"></i> Neureifen-Verkauf zu tagesaktuellen Bestpreisen</li>
+              <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 mr-2 text-brand-600"></i> Altreifen-Entsorgung</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- BEREICH 2: BAGGERARBEITEN & MIETPARK -->
+  <section id="bagger-verleih" class="py-16 bg-slate-100 border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <div class="inline-flex items-center space-x-2 text-amber-700 bg-amber-100 px-3 py-1 rounded-full text-xs font-bold uppercase mb-3">
+          <i data-lucide="truck" class="w-3.5 h-3.5"></i> Erdarbeiten & Geräteverleih
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-black text-navy-900">
+          Baggerarbeiten & Maschinenverleih
+        </h2>
+        <p class="mt-3 text-slate-600 text-base">
+          Sie planen ein Bau- oder Gartenprojekt? Wir führen <strong>Baggerarbeiten mit erfahrenem Fahrer</strong> für Sie aus – oder vermieten leistungsfähige Baumaschinen für Selbermacher!
+        </p>
+      </div>
+
+      <!-- 2-Spalten: Ausführung vs. Verleih -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+        
+        <!-- Baggerarbeiten mit Fahrer -->
+        <div class="bg-white rounded-2xl p-6 sm:p-8 border border-slate-200 shadow-sm space-y-4">
+          <div class="w-12 h-12 rounded-xl bg-amber-100 text-amber-700 flex items-center justify-center font-black">
+            <i data-lucide="hard-hat" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-xl font-bold text-navy-900">1. Baggerarbeiten als Dienstleistung</h3>
+          <p class="text-sm text-slate-600 leading-relaxed">
+            Keine Zeit oder Erfahrung, selbst auf dem Bagger zu sitzen? Wir erledigen Ihre Erdarbeiten sauber, schnell und termintreu:
+          </p>
+          <ul class="text-xs sm:text-sm text-slate-700 space-y-2">
+            <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 mr-2 text-amber-600"></i> Aushub für Fundamente, Terrassen & Poolanlagen</li>
+            <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 mr-2 text-amber-600"></i> Gräben für Rohre, Kabel, Entwässerung & Zuleitungen</li>
+            <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 mr-2 text-amber-600"></i> Wurzelrodung & Geländemodellierung</li>
+            <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 mr-2 text-amber-600"></i> Planierarbeiten & Schottereinbau</li>
+          </ul>
+          <div class="pt-2">
+            <a href="tel:03965257872" class="inline-flex items-center text-amber-700 font-bold text-sm hover:underline">
+              Bagger-Einsatz besprechen <i data-lucide="arrow-right" class="w-4 h-4 ml-1"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Maschinenverleih (Selbstfahrer) -->
+        <div class="bg-white rounded-2xl p-6 sm:p-8 border border-slate-200 shadow-sm space-y-4">
+          <div class="w-12 h-12 rounded-xl bg-brand-100 text-brand-700 flex items-center justify-center font-black">
+            <i data-lucide="key" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-xl font-bold text-navy-900">2. Maschinenverleih (Mietpark)</h3>
+          <p class="text-sm text-slate-600 leading-relaxed">
+            Für Bauherren, Gartenfreunde und Betriebe: Mieten Sie gepflegte Profigeräte zu fairen Tages- und Wochenendtarifen:
+          </p>
+          <ul class="text-xs sm:text-sm text-slate-700 space-y-2">
+            <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 mr-2 text-brand-600"></i> <strong>Minibagger 1,8 t</strong> (inkl. Graben- & Tieflöffel)</li>
+            <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 mr-2 text-brand-600"></i> <strong>Rüttelplatten (100 kg & 200 kg reversierbar)</strong> mit Pflasterschutz</li>
+            <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 mr-2 text-brand-600"></i> <strong>Hydraulischer Holzspalter</strong> & Erdbohrgerät</li>
+            <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 mr-2 text-brand-600"></i> <strong>Maschinentransporter</strong> mit Auffahrrampen</li>
+          </ul>
+          <div class="pt-2">
+            <a href="tel:03965257872" class="inline-flex items-center text-brand-700 font-bold text-sm hover:underline">
+              Mietgerät reservieren <i data-lucide="arrow-right" class="w-4 h-4 ml-1"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- BEREICH 3: GARTENGERÄTE FACHHANDEL (KRESS, SOLO, HERKULES) -->
+  <section id="gartengeraete" class="py-16 sm:py-20 bg-white border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <div class="inline-flex items-center space-x-2 text-emerald-700 bg-emerald-100 px-3 py-1 rounded-full text-xs font-bold uppercase mb-3">
+          <i data-lucide="sparkles" class="w-3.5 h-3.5"></i> Autorisierter Fachhandel
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-black text-navy-900">
+          Gartentechnik von Kress, Solo & Herkules
+        </h2>
+        <p class="mt-3 text-slate-600 text-base">
+          Verkauf, Einweisung, Zubehör und werkstatteigener Kundendienst: Wir setzen auf bewährte Spitzenmarken statt Wegwerf-Baumarktware.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <!-- Marke 1: Kress -->
+        <div class="bg-slate-50 rounded-2xl p-6 sm:p-8 border border-slate-200 hover:border-emerald-500 transition-all shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="inline-block bg-navy-900 text-white font-black text-xs px-3 py-1 rounded-md uppercase tracking-wider mb-4">
+              Kress Robotik & Akku
+            </div>
+            <h3 class="text-xl font-bold text-navy-900 mb-2">Kress Mähroboter & Akkusysteme</h3>
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mb-4">
+              Pionier der kabelungebundenen RTK-Mähroboter (ohne Begrenzungsdraht!) sowie extrem langlebige Akku-Gartengeräte für Privatgärten und Großflächen.
+            </p>
+            <ul class="text-xs text-slate-700 space-y-1.5 mb-6">
+              <li class="flex items-center"><i data-lucide="check" class="w-3.5 h-3.5 mr-2 text-emerald-600"></i> Kress Mission & RTK-Robotermäher</li>
+              <li class="flex items-center"><i data-lucide="check" class="w-3.5 h-3.5 mr-2 text-emerald-600"></i> Akku-Trimmer, Laubbläser & Heckenscheren</li>
+              <li class="flex items-center"><i data-lucide="check" class="w-3.5 h-3.5 mr-2 text-emerald-600"></i> Beratung & Vor-Ort-Installation in Burow</li>
+            </ul>
+          </div>
+          <div class="pt-4 border-t border-slate-200">
+            <a href="tel:03965257872" class="w-full inline-flex items-center justify-center bg-navy-900 hover:bg-emerald-600 text-white text-xs font-bold py-2.5 rounded-lg transition">
+              Kress-Beratung anfragen
+            </a>
+          </div>
+        </div>
+
+        <!-- Marke 2: Solo by AL-KO -->
+        <div class="bg-slate-50 rounded-2xl p-6 sm:p-8 border border-slate-200 hover:border-red-500 transition-all shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="inline-block bg-red-700 text-white font-black text-xs px-3 py-1 rounded-md uppercase tracking-wider mb-4">
+              Solo by AL-KO
+            </div>
+            <h3 class="text-xl font-bold text-navy-900 mb-2">Solo Motorgartengeräte</h3>
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mb-4">
+              Traditionelle deutsche Ingenieurskunst für Garten, Forst und Landwirtschaft. Bekannt für langlebige Motorsägen, Rasenmäher und Rückenspritzen.
+            </p>
+            <ul class="text-xs text-slate-700 space-y-1.5 mb-6">
+              <li class="flex items-center"><i data-lucide="check" class="w-3.5 h-3.5 mr-2 text-red-600"></i> Robuste Benzin- & Akku-Kettensägen</li>
+              <li class="flex items-center"><i data-lucide="check" class="w-3.5 h-3.5 mr-2 text-red-600"></i> Benzin-Rasenmäher & Rasentraktoren</li>
+              <li class="flex items-center"><i data-lucide="check" class="w-3.5 h-3.5 mr-2 text-red-600"></i> Profi-Druckspritzen für Pflanzenschutz</li>
+            </ul>
+          </div>
+          <div class="pt-4 border-t border-slate-200">
+            <a href="tel:03965257872" class="w-full inline-flex items-center justify-center bg-navy-900 hover:bg-red-600 text-white text-xs font-bold py-2.5 rounded-lg transition">
+              Solo-Geräte anfragen
+            </a>
+          </div>
+        </div>
+
+        <!-- Marke 3: Herkules -->
+        <div class="bg-slate-50 rounded-2xl p-6 sm:p-8 border border-slate-200 hover:border-blue-500 transition-all shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="inline-block bg-blue-800 text-white font-black text-xs px-3 py-1 rounded-md uppercase tracking-wider mb-4">
+              Herkules Motorgeräte
+            </div>
+            <h3 class="text-xl font-bold text-navy-900 mb-2">Herkules Kraftpakete</h3>
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mb-4">
+              Spezialist für anspruchsvolles Gelände, Gestrüpp, Hanglagen und Großflächen. Perfekt für Landwirte, Kommunen und Hausbesitzer mit großen Grundstücken.
+            </p>
+            <ul class="text-xs text-slate-700 space-y-1.5 mb-6">
+              <li class="flex items-center"><i data-lucide="check" class="w-3.5 h-3.5 mr-2 text-blue-600"></i> Hochgras- & Gestrüppmäher / Wiesenmäher</li>
+              <li class="flex items-center"><i data-lucide="check" class="w-3.5 h-3.5 mr-2 text-blue-600"></i> Allrad-Aufsitzmäher & Schredder</li>
+              <li class="flex items-center"><i data-lucide="check" class="w-3.5 h-3.5 mr-2 text-blue-600"></i> Wartung, Ersatzteile & Schärfdienst im Haus</li>
+            </ul>
+          </div>
+          <div class="pt-4 border-t border-slate-200">
+            <a href="tel:03965257872" class="w-full inline-flex items-center justify-center bg-navy-900 hover:bg-blue-600 text-white text-xs font-bold py-2.5 rounded-lg transition">
+              Herkules-Geräte anfragen
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- BEREICH 4: SCHLEIFEREI & HYDRAULIK SERVICE -->
+  <section id="services" class="py-16 bg-slate-100 border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        
+        <!-- Schleiferei für Messer und Scheren -->
+        <div class="bg-white rounded-2xl p-6 sm:p-8 border border-slate-200 shadow-sm space-y-4">
+          <div class="w-12 h-12 rounded-xl bg-blue-100 text-blue-700 flex items-center justify-center">
+            <i data-lucide="scissors" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-2xl font-black text-navy-900">Schleiferei für Messer & Scheren</h3>
+          <p class="text-sm text-slate-600 leading-relaxed">
+            Stumpfe Klingen reißen statt zu schneiden und beschädigen Pflanzen oder Materialien. Bringen Sie Ihr Schneidwerkzeug einfach bei uns in Burow vorbei:
+          </p>
+          <ul class="text-xs sm:text-sm text-slate-700 space-y-2">
+            <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 mr-2 text-blue-600"></i> <strong>Rasenmähermesser:</strong> Schärfen & präzises Auswuchten (schont die Motorwelle!)</li>
+            <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 mr-2 text-blue-600"></i> <strong>Hecken- & Astscheren:</strong> Schärfen, Entgraten und Einstellen des Schnittspiels</li>
+            <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 mr-2 text-blue-600"></i> <strong>Sägeketten:</strong> Schärfen auf Profi-Schleifautomaten für Motorsägen</li>
+            <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 mr-2 text-blue-600"></i> <strong>Kreissägeblätter:</strong> Schärfen von CV- und Hartmetall-Blättern</li>
+            <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 mr-2 text-blue-600"></i> <strong>Küchen- & Arbeitsmesser:</strong> Grundschliff und Feinschliff für Privathaushalte</li>
+          </ul>
+        </div>
+
+        <!-- Hydraulik Service -->
+        <div class="bg-white rounded-2xl p-6 sm:p-8 border border-slate-200 shadow-sm space-y-4">
+          <div class="w-12 h-12 rounded-xl bg-indigo-100 text-indigo-700 flex items-center justify-center">
+            <i data-lucide="gauge" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-2xl font-black text-navy-900">Hydraulik-Sofortservice</h3>
+          <p class="text-sm text-slate-600 leading-relaxed">
+            Ein geplatzter Schlauch legt Traktor, Bagger oder Ladekran lahm. Wir verpressen Hydraulikschläuche schnell und passgenau direkt in unserer Werkstatt:
+          </p>
+          <ul class="text-xs sm:text-sm text-slate-700 space-y-2">
+            <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 mr-2 text-indigo-600"></i> <strong>Sofort-Verpressung:</strong> Bis 2- und 4-Lagen-Hochdruckschläuche</li>
+            <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 mr-2 text-indigo-600"></i> <strong>Armaturen & Anschlüsse:</strong> Gängige metrische & zöllige Gewinde auf Lager</li>
+            <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 mr-2 text-indigo-600"></i> <strong>Hydrauliköle & Dichtsätze:</strong> HLP 46, Zylinderdichtungen und Kupplungen</li>
+            <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 mr-2 text-indigo-600"></i> <strong>Notdienst in der Ernte:</strong> Schnelle Reparatur zur Vermeidung von Standzeiten</li>
+          </ul>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- KONTAKT & ANFAHRT -->
+  <section id="kontakt" class="py-16 sm:py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <h2 class="text-3xl sm:text-4xl font-black text-navy-900 tracking-tight">
+          Kontakt & Öffnungszeiten
+        </h2>
+        <p class="mt-3 text-slate-600 text-base">
+          Werkstatt Burow · Seltzer Straße 4, 17089 Burow · Zentral an der B96
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+        
+        <!-- Kontaktdaten Box -->
+        <div class="lg:col-span-5 bg-slate-50 rounded-2xl p-6 sm:p-8 border border-slate-200 space-y-6">
+          <div class="space-y-1">
+            <h3 class="text-xl font-bold text-navy-900">Werkstatt Burow</h3>
+            <span class="text-xs text-slate-500 font-semibold block">vormals BFL Burower Fahrzeug- und Landtechnik GmbH</span>
+            <span class="text-xs text-brand-700 font-semibold block">Werkstattleitung: Markus</span>
+          </div>
+          
+          <div class="space-y-4 text-sm text-slate-700">
+            <div class="flex items-start space-x-3">
+              <i data-lucide="map-pin" class="w-5 h-5 text-brand-600 flex-shrink-0 mt-0.5"></i>
+              <div>
+                <strong>Adresse:</strong><br>
+                Seltzer Straße 4<br>
+                17089 Burow (Mecklenburg-Vorpommern)
+              </div>
+            </div>
+
+            <div class="flex items-start space-x-3">
+              <i data-lucide="phone" class="w-5 h-5 text-brand-600 flex-shrink-0 mt-0.5"></i>
+              <div>
+                <strong>Telefon (Werkstatt):</strong><br>
+                <a href="tel:03965257872" class="text-navy-900 font-bold hover:text-brand-600">03965 257872</a>
+              </div>
+            </div>
+
+            <div class="flex items-start space-x-3">
+              <i data-lucide="smartphone" class="w-5 h-5 text-brand-600 flex-shrink-0 mt-0.5"></i>
+              <div>
+                <strong>Mobil / WhatsApp (Otto Günther):</strong><br>
+                <a href="tel:01717235230" class="text-navy-900 font-bold hover:text-brand-600">0171 7235230</a>
+              </div>
+            </div>
+
+            <div class="flex items-start space-x-3">
+              <i data-lucide="message-circle" class="w-5 h-5 text-brand-600 flex-shrink-0 mt-0.5"></i>
+              <div>
+                <strong>WhatsApp Service:</strong><br>
+                <a href="https://wa.me/491717235230" target="_blank" class="text-brand-700 font-semibold hover:underline">Direkt per WhatsApp anfragen (0171 7235230)</a>
+              </div>
+            </div>
+
+            <div class="flex items-start space-x-3">
+              <i data-lucide="clock" class="w-5 h-5 text-brand-600 flex-shrink-0 mt-0.5"></i>
+              <div>
+                <strong>Werkstatt-Öffnungszeiten:</strong><br>
+                Montag – Freitag: 07:00 – 17:00 Uhr<br>
+                Samstag: nach Vereinbarung
+              </div>
+            </div>
+          </div>
+
+          <div class="pt-4 border-t border-slate-200 flex gap-3">
+            <a href="tel:03965257872" class="flex-1 bg-brand-600 hover:bg-brand-700 text-white font-bold py-3 rounded-xl text-center text-sm transition shadow">
+              Jetzt anrufen
+            </a>
+            <a href="https://maps.google.com/?q=Seltzer+Straße+4+17089+Burow" target="_blank" rel="noopener noreferrer" class="flex-1 bg-navy-900 hover:bg-navy-800 text-white font-bold py-3 rounded-xl text-center text-sm transition shadow flex items-center justify-center">
+              <i data-lucide="navigation" class="w-4 h-4 mr-1.5 text-amber-400"></i> Route planen
+            </a>
+          </div>
+        </div>
+
+        <!-- Google Maps Karte -->
+        <div class="lg:col-span-7 bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm flex flex-col justify-between">
+          <div class="p-6 bg-slate-50 border-b border-slate-200 flex items-center justify-between">
+            <div class="flex items-center space-x-2 text-sm font-bold text-navy-900">
+              <i data-lucide="map" class="w-4 h-4 text-brand-600"></i>
+              <span>Standort Burow (B96)</span>
+            </div>
+            <span class="text-xs text-slate-500">10 Min. ab Altentreptow · 15 Min. ab Demmin</span>
+          </div>
+
+          <div class="h-80 bg-slate-200 relative flex items-center justify-center text-slate-500">
+            <iframe 
+              src="https://maps.google.com/maps?q=Seltzer+Stra%C3%9Fe+4,+17089+Burow&t=&z=14&ie=UTF8&iwloc=&output=embed" 
+              width="100%" 
+              height="100%" 
+              style="border:0;" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+
+          <div class="p-4 bg-slate-50 text-xs text-slate-500 text-center">
+            Werkstatt Burow · Seltzer Straße 4 · 17089 Burow
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-navy-950 text-slate-400 py-12 border-t border-slate-800 text-xs sm:text-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 pb-8 border-b border-slate-800">
+        
+        <div class="space-y-3">
+          <div class="flex items-center space-x-2">
+            <div class="w-8 h-8 bg-brand-600 rounded flex items-center justify-center text-white font-black text-sm">
+              WB
+            </div>
+            <span class="text-base font-bold text-white">Werkstatt Burow</span>
+          </div>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            Kfz-Werkstatt, Baggerarbeiten, Schleifdienst & Fachhandel für Gartengeräte in Burow und Umgebung.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="text-white font-bold text-sm mb-3">Leistungen</h4>
+          <ul class="space-y-1.5 text-xs">
+            <li><a href="#kfz-werkstatt" class="hover:text-white transition">Kfz-Reparatur & TÜV</a></li>
+            <li><a href="#bagger-verleih" class="hover:text-white transition">Baggerarbeiten mit Fahrer</a></li>
+            <li><a href="#bagger-verleih" class="hover:text-white transition">Maschinenverleih / Mietpark</a></li>
+            <li><a href="#services" class="hover:text-white transition">Schleiferei für Messer & Scheren</a></li>
+            <li><a href="#services" class="hover:text-white transition">Hydraulik- & Reifenservice</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-white font-bold text-sm mb-3">Gartentechnik Marken</h4>
+          <ul class="space-y-1.5 text-xs">
+            <li><a href="#gartengeraete" class="hover:text-white transition">Kress Mähroboter & RTK</a></li>
+            <li><a href="#gartengeraete" class="hover:text-white transition">Solo by AL-KO Motorgeräte</a></li>
+            <li><a href="#gartengeraete" class="hover:text-white transition">Herkules Gestrüpp- & Wiesenmäher</a></li>
+            <li><a href="#services" class="hover:text-white transition">Kettenschärfen & Mähmesserschliff</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-white font-bold text-sm mb-3">Kontakt & Standort</h4>
+          <p class="text-xs text-slate-400 mb-2">
+            Seltzer Straße 4<br>
+            17089 Burow<br>
+            Tel: 03965 257872
+          </p>
+          <p class="text-[11px] text-slate-500">
+            vormals BFL Burower Fahrzeug- und Landtechnik GmbH
+          </p>
+        </div>
+
+      </div>
+
+      <div class="pt-6 flex flex-col sm:flex-row justify-between items-center text-xs text-slate-500 gap-2">
+        <p>© 2026 Werkstatt Burow. Alle Rechte vorbehalten.</p>
+        <p>Ihr Handwerkspartner im Raum Altentreptow, Demmin & Neubrandenburg.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lucide Script Initialization -->
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>
