@@ -75,30 +75,38 @@
         ],
         "hasOfferCatalog": {
           "@type": "OfferCatalog",
-          "name": "Dienstleistungen & Mietpark",
+          "name": "Dienstleistungen, Angebote & Mietpark",
           "itemListElement": [
             {
               "@type": "Offer",
               "itemOffered": {
                 "@type": "Service",
-                "name": "Kfz-Reparatur, Inspektion & TÜV",
-                "description": "Wartung und Hauptuntersuchung für alle Fabrikate"
+                "name": "Kfz-Meisterwerkstatt: Inspektion, TÜV/AU, Diagnose, Achsvermessung, Klima, Reifen, Unfall & Anhänger",
+                "description": "Wartung, Hauptuntersuchung (Mo & Do), Fahrzeugdiagnose, Achsvermessung, Klimaservice, Reifenservice inkl. Einlagerung, Unfallinstandsetzung & Anhängerreparatur für alle Fabrikate"
               }
             },
             {
               "@type": "Offer",
               "itemOffered": {
                 "@type": "Service",
-                "name": "Baumaschinenverleih & Baggerarbeiten",
-                "description": "Minibagger 1,8 t, Radlader, Hubsteiger 12 m, Häcksler bis 12 cm & Rüttelplatten mit oder ohne Fahrer"
+                "name": "Landtechnik & John Deere Service",
+                "description": "Wartung und Reparatur für John Deere Schlepper und alle Fabrikate, 24/7 Ernte-Notdienst, verlängerter Bestellservice bis 20:00 Uhr und großes Ersatzteillager"
               }
             },
             {
               "@type": "Offer",
               "itemOffered": {
                 "@type": "Service",
-                "name": "Kress RTK-Mähroboter Fachhandel & Service",
-                "description": "Kabellose Mähroboter mit zentimetergenauer Satellitennavigation"
+                "name": "Baumaschinenverleih, Baggerarbeiten & SANY Verkauf",
+                "description": "Minibagger 1,8 t & 2,6 t, Radlader, Hubsteiger 12 m, Häcksler bis 12 cm & Rüttelplatten sowie SANY Baumaschinen-Vertrieb (inkl. Radlader SW 405, 5 Jahre / 10.000 Std. Garantie)"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Kress Mission & RTK-Mähroboter, Kettensägen, Solo & Herkules",
+                "description": "Fachhandel für Kress Mähroboter, Shindaiwa/ECHO/Solo Kettensägen und Herkules Motorgeräte"
               }
             },
             {
@@ -210,20 +218,26 @@
         </a>
 
         <!-- Desktop Menu -->
-        <div class="hidden lg:flex items-center space-x-4 xl:space-x-7 text-xs xl:text-sm font-semibold text-slate-700 whitespace-nowrap">
+        <div class="hidden lg:flex items-center space-x-3 xl:space-x-6 text-xs xl:text-sm font-semibold text-slate-700 whitespace-nowrap">
+          <a href="#angebote" class="hover:text-brand-600 flex items-center transition whitespace-nowrap py-1">
+            <i data-lucide="tag" class="w-4 h-4 mr-1 text-amber-500 flex-shrink-0"></i> Angebote
+          </a>
           <a href="#kfz-werkstatt" class="hover:text-brand-600 flex items-center transition whitespace-nowrap py-1">
             <i data-lucide="car" class="w-4 h-4 mr-1 text-brand-600 flex-shrink-0"></i> Kfz-Werkstatt
           </a>
+          <a href="#landtechnik" class="hover:text-brand-600 flex items-center transition whitespace-nowrap py-1">
+            <i data-lucide="tractor" class="w-4 h-4 mr-1 text-brand-600 flex-shrink-0"></i> Landtechnik
+          </a>
           <a href="#bagger-verleih" class="hover:text-brand-600 flex items-center transition whitespace-nowrap py-1">
-            <i data-lucide="truck" class="w-4 h-4 mr-1 text-brand-600 flex-shrink-0"></i> Bagger & Verleih
+            <i data-lucide="truck" class="w-4 h-4 mr-1 text-brand-600 flex-shrink-0"></i> Baumaschinen
           </a>
           <a href="#gartengeraete" class="hover:text-brand-600 flex items-center transition whitespace-nowrap py-1">
-            <i data-lucide="sparkles" class="w-4 h-4 mr-1 text-brand-600 flex-shrink-0"></i> Kress · Solo · Herkules
+            <i data-lucide="sparkles" class="w-4 h-4 mr-1 text-brand-600 flex-shrink-0"></i> Gartentechnik
           </a>
           <a href="#services" class="hover:text-brand-600 flex items-center transition whitespace-nowrap py-1">
             <i data-lucide="scissors" class="w-4 h-4 mr-1 text-brand-600 flex-shrink-0"></i> Schleiferei & Hydraulik
           </a>
-          <a href="#kontakt" class="hover:text-brand-600 transition whitespace-nowrap py-1">Kontakt & Anfahrt</a>
+          <a href="#kontakt" class="hover:text-brand-600 transition whitespace-nowrap py-1">Kontakt</a>
         </div>
 
         <!-- Quick CTA Button -->
@@ -312,13 +326,14 @@
               <div>
                 <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Ihr Anliegen</label>
                 <select class="w-full bg-slate-50 border border-slate-300 rounded-lg px-3.5 py-2.5 text-sm focus:ring-2 focus:ring-brand-500 focus:outline-none">
-                  <option>Pkw-Reparatur / Inspektion / TÜV</option>
-                  <option>Baggerarbeiten (mit Fahrer)</option>
-                  <option>Maschinenverleih (Minibagger, Radlader, Hubsteiger, Häcksler, Rüttelplatte)</option>
-                  <option>Gartengeräte Beratung (Kress, Solo, Herkules)</option>
-                  <option>Schleifdienst (Messer, Scheren, Ketten)</option>
-                  <option>Hydraulikschlauch Verpressung</option>
-                  <option>Reifenservice (Pkw, Transporter, Agrar)</option>
+                  <option>Pkw-Reparatur / Inspektion / HU & AU (Mo & Do)</option>
+                  <option>Achsvermessung / Unfallservice / Anhängerreparatur</option>
+                  <option>Landtechnik / John Deere Service & Ersatzteile</option>
+                  <option>Baggerarbeiten (mit Fahrer) & Maschinenverleih (1,8 t / 2,6 t)</option>
+                  <option>SANY Baumaschinen-Kauf & Radlader SW 405</option>
+                  <option>Gartengeräte & Kettensägen (Kress, Solo, Herkules, Shindaiwa/ECHO)</option>
+                  <option>Schleifdienst (Messer, Scheren, Ketten) & Hydraulik</option>
+                  <option>Reifenservice inkl. Einlagerung (Pkw, Transporter, Agrar)</option>
                 </select>
               </div>
 
@@ -343,21 +358,33 @@
     </div>
   </section>
 
-  <!-- DIE 5 KERN-BEREICHE DER NEUEN WERKSTATT BUROW -->
+  <!-- DIE 6 KERN-BEREICHE DER WERKSTATT BUROW -->
   <section class="py-12 bg-white border-b border-slate-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid grid-cols-2 md:grid-cols-5 gap-4">
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
         
+        <a href="#angebote" class="p-4 rounded-xl bg-amber-50/70 border border-amber-200 hover:border-amber-500 transition text-center group">
+          <i data-lucide="tag" class="w-8 h-8 mx-auto text-amber-600 mb-2 group-hover:scale-110 transition-transform"></i>
+          <span class="block font-bold text-navy-900 text-sm">Aktuelle Angebote</span>
+          <span class="text-[11px] text-slate-600">SANY · Kettensägen · Kress</span>
+        </a>
+
         <a href="#kfz-werkstatt" class="p-4 rounded-xl bg-slate-50 border border-slate-200 hover:border-brand-500 transition text-center group">
           <i data-lucide="car" class="w-8 h-8 mx-auto text-brand-600 mb-2 group-hover:scale-110 transition-transform"></i>
           <span class="block font-bold text-navy-900 text-sm">Kfz-Werkstatt</span>
-          <span class="text-[11px] text-slate-500">Alle Marken & TÜV</span>
+          <span class="text-[11px] text-slate-500">Alle Marken & HU (Mo/Do)</span>
+        </a>
+
+        <a href="#landtechnik" class="p-4 rounded-xl bg-slate-50 border border-slate-200 hover:border-brand-500 transition text-center group">
+          <i data-lucide="tractor" class="w-8 h-8 mx-auto text-green-700 mb-2 group-hover:scale-110 transition-transform"></i>
+          <span class="block font-bold text-navy-900 text-sm">Landtechnik</span>
+          <span class="text-[11px] text-slate-500">John Deere & Ernte-Notdienst</span>
         </a>
 
         <a href="#bagger-verleih" class="p-4 rounded-xl bg-slate-50 border border-slate-200 hover:border-brand-500 transition text-center group">
           <i data-lucide="truck" class="w-8 h-8 mx-auto text-amber-600 mb-2 group-hover:scale-110 transition-transform"></i>
-          <span class="block font-bold text-navy-900 text-sm">Bagger & Verleih</span>
-          <span class="text-[11px] text-slate-500">Mit Fahrer & Miete</span>
+          <span class="block font-bold text-navy-900 text-sm">Baumaschinen</span>
+          <span class="text-[11px] text-slate-500">SANY Kauf & Mietpark</span>
         </a>
 
         <a href="#gartengeraete" class="p-4 rounded-xl bg-slate-50 border border-slate-200 hover:border-brand-500 transition text-center group">
@@ -368,28 +395,115 @@
 
         <a href="#services" class="p-4 rounded-xl bg-slate-50 border border-slate-200 hover:border-brand-500 transition text-center group">
           <i data-lucide="scissors" class="w-8 h-8 mx-auto text-blue-600 mb-2 group-hover:scale-110 transition-transform"></i>
-          <span class="block font-bold text-navy-900 text-sm">Schleiferei</span>
-          <span class="text-[11px] text-slate-500">Messer, Scheren, Ketten</span>
-        </a>
-
-        <a href="#services" class="p-4 rounded-xl bg-slate-50 border border-slate-200 hover:border-brand-500 transition text-center group col-span-2 md:col-span-1">
-          <i data-lucide="disc" class="w-8 h-8 mx-auto text-indigo-600 mb-2 group-hover:scale-110 transition-transform"></i>
-          <span class="block font-bold text-navy-900 text-sm">Reifen & Hydraulik</span>
-          <span class="text-[11px] text-slate-500">Sofort-Service</span>
+          <span class="block font-bold text-navy-900 text-sm">Schleiferei & Hydraulik</span>
+          <span class="text-[11px] text-slate-500">Messer, Ketten, Schläuche</span>
         </a>
 
       </div>
     </div>
   </section>
 
-  <!-- BEREICH 1: KFZ-WERKSTATT (MARKUS' KERNKOMPETENZ) -->
+  <!-- AKTUELLE ANGEBOTE & HIGHLIGHTS (VON BFL-BUROW.DE) -->
+  <section id="angebote" class="py-16 bg-slate-100 border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <div class="inline-flex items-center space-x-2 text-amber-800 bg-amber-100 px-3 py-1 rounded-full text-xs font-bold uppercase mb-3">
+          <i data-lucide="flame" class="w-3.5 h-3.5"></i> Jetzt bei uns vor Ort in Burow
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-black text-navy-900">
+          Aktuelle Angebote & Highlights
+        </h2>
+        <p class="mt-3 text-slate-600 text-base">
+          Starke Technik für Forst, Baustelle und Garten – persönlich beraten, einsatzbereit übergeben und direkt in unserer Fachwerkstatt betreut.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <!-- Angebot 1: Kettensägen -->
+        <div class="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl hover:border-amber-500 transition-all flex flex-col justify-between group">
+          <div>
+            <div class="h-56 bg-slate-200 overflow-hidden relative">
+              <img src="images/angebot-kettensaege.jpg" alt="Profi-Kettensägen Shindaiwa und ECHO bei BFL Burow" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+              <span class="absolute top-3 left-3 bg-amber-600 text-white font-black text-[11px] px-2.5 py-1 rounded-md uppercase tracking-wider shadow">
+                Forst & Holzzeit
+              </span>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-navy-900 mb-2">Kettensägen – Jetzt bei uns!</h3>
+              <p class="text-sm text-slate-600 leading-relaxed mb-4">
+                <strong>Die Holzzeit kann kommen, wir helfen aus.</strong> Ob für Brennholz oder anspruchsvollen Forsteinsatz – bei uns erhalten Sie robuste Profi-Kettensägen (u. a. Shindaiwa, ECHO & Solo) inkl. Einweisung, Zubehör und eigenem Kettenschärf-Service.
+              </p>
+            </div>
+          </div>
+          <div class="p-6 pt-0">
+            <a href="tel:03965257872" class="w-full inline-flex items-center justify-center bg-navy-900 hover:bg-amber-600 text-white text-xs font-bold py-3 rounded-xl transition shadow">
+              <i data-lucide="phone" class="w-3.5 h-3.5 mr-1.5"></i> Kettensägen-Angebot anfragen
+            </a>
+          </div>
+        </div>
+
+        <!-- Angebot 2: SANY Radlader SW 405 -->
+        <div class="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl hover:border-red-500 transition-all flex flex-col justify-between group">
+          <div>
+            <div class="h-56 bg-slate-200 overflow-hidden relative">
+              <img src="images/angebot-sany-radlader.jpg" alt="SANY Radlader SW 405 bei BFL Burow" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+              <span class="absolute top-3 left-3 bg-red-600 text-white font-black text-[11px] px-2.5 py-1 rounded-md uppercase tracking-wider shadow">
+                SANY Neuheit
+              </span>
+            </div>
+            <div class="p-6">
+              <div class="flex items-center justify-between gap-3 mb-2">
+                <h3 class="text-xl font-bold text-navy-900">SANY Radlader SW 405</h3>
+                <img src="images/sany-logo.jpg" alt="SANY Logo" class="h-5 object-contain flex-shrink-0">
+              </div>
+              <p class="text-sm text-slate-600 leading-relaxed mb-4">
+                <strong>Der neue SANY Radlader SW 405!</strong> Alle Infos, Daten und persönliche Beratung erhalten Sie direkt bei uns. Auf alle SANY-Baumaschinen gibt es <strong>5 Jahre oder 10.000 Std. Garantie</strong>.
+              </p>
+            </div>
+          </div>
+          <div class="p-6 pt-0">
+            <a href="#bagger-verleih" class="w-full inline-flex items-center justify-center bg-navy-900 hover:bg-red-600 text-white text-xs font-bold py-3 rounded-xl transition shadow">
+              <i data-lucide="arrow-right" class="w-3.5 h-3.5 mr-1.5"></i> Mehr zu SANY Baumaschinen
+            </a>
+          </div>
+        </div>
+
+        <!-- Angebot 3: Kress Mission Mähroboter -->
+        <div class="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl hover:border-emerald-500 transition-all flex flex-col justify-between group">
+          <div>
+            <div class="h-56 bg-slate-200 overflow-hidden relative">
+              <img src="images/angebot-maehroboter.jpg" alt="Kress Mission Mähroboter Produktreihe auf Rasen" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+              <span class="absolute top-3 left-3 bg-emerald-600 text-white font-black text-[11px] px-2.5 py-1 rounded-md uppercase tracking-wider shadow">
+                Rasen-Robotik
+              </span>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-navy-900 mb-2">Kress Mission Mähroboter</h3>
+              <p class="text-sm text-slate-600 leading-relaxed mb-4">
+                <strong>Störungsfreies Mähen durch patentierte Innovationen!</strong> Wir beraten Sie gerne zu den passenden Kress Mission & RTK-Modellen für Ihren Garten und sorgen für einen unkomplizierten Aufbau vor Ort.
+              </p>
+            </div>
+          </div>
+          <div class="p-6 pt-0">
+            <a href="#gartengeraete" class="w-full inline-flex items-center justify-center bg-navy-900 hover:bg-emerald-600 text-white text-xs font-bold py-3 rounded-xl transition shadow">
+              <i data-lucide="sparkles" class="w-3.5 h-3.5 mr-1.5"></i> Kress Beratung & Aufbau
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- BEREICH 1: KFZ-WERKSTATT (ALLE LEISTUNGEN & BILDER) -->
   <section id="kfz-werkstatt" class="py-16 bg-white border-b border-slate-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
-        
-        <div class="lg:col-span-7 space-y-5">
+      
+      <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-10">
+        <div class="max-w-3xl space-y-4">
           <div class="inline-flex items-center space-x-2 text-brand-700 bg-brand-100 px-3 py-1 rounded-full text-xs font-bold uppercase">
-            <i data-lucide="shield-check" class="w-3.5 h-3.5"></i> Meisterlich & Ehrlich
+            <i data-lucide="shield-check" class="w-3.5 h-3.5"></i> Meisterlich & Ehrlich · Alle Fabrikate
           </div>
           <h2 class="text-3xl sm:text-4xl font-black text-navy-900">
             Kfz-Meisterwerkstatt für alle Fabrikate
@@ -397,56 +511,187 @@
           <p class="text-slate-600 text-base leading-relaxed">
             Als gelernter Kfz-Mechaniker legt <strong>Markus Klein</strong> größten Wert auf handwerkliche Präzision, moderne Fehlerdiagnose und transparente Absprachen. Wir warten und reparieren Pkw, Transporter und Anhänger aller Marken nach strengen Herstellervorgaben.
           </p>
-
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
-            <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
-              <h4 class="font-bold text-navy-900 text-sm mb-1 flex items-center">
-                <i data-lucide="badge-check" class="w-4 h-4 mr-2 text-brand-600"></i> TÜV & AU Vor-Ort
-              </h4>
-              <p class="text-xs text-slate-500">Regelmäßige Prüftage im Haus inkl. gründlicher Durchsicht im Vorfeld.</p>
+        </div>
+        <div class="flex-shrink-0">
+          <div class="bg-brand-50 border border-brand-200 rounded-xl p-4 flex items-center space-x-3">
+            <div class="w-10 h-10 rounded-lg bg-brand-600 text-white flex items-center justify-center flex-shrink-0">
+              <i data-lucide="badge-check" class="w-5 h-5"></i>
             </div>
-
-            <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
-              <h4 class="font-bold text-navy-900 text-sm mb-1 flex items-center">
-                <i data-lucide="cpu" class="w-4 h-4 mr-2 text-brand-600"></i> Diagnose & Elektronik
-              </h4>
-              <p class="text-xs text-slate-500">Fehlerspeicher auslesen, Steuergeräte prüfen & Sensorik instandsetzen.</p>
+            <div>
+              <span class="block text-xs font-bold text-brand-800 uppercase">Hauptuntersuchung (HU & AU)</span>
+              <span class="text-sm font-bold text-navy-900">Montag & Donnerstag</span>
+              <span class="block text-[11px] text-slate-600">nach Vereinbarung inkl. Vorab-Check</span>
             </div>
+          </div>
+        </div>
+      </div>
 
-            <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
-              <h4 class="font-bold text-navy-900 text-sm mb-1 flex items-center">
-                <i data-lucide="disc" class="w-4 h-4 mr-2 text-brand-600"></i> Bremsen & Fahrwerk
-              </h4>
-              <p class="text-xs text-slate-500">Beläge, Scheiben, Stoßdämpfer und Lenkungsteile in Erstausrüsterqualität.</p>
+      <!-- 6 Kfz-Leistungen mit echten Fotos -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+        
+        <!-- Inspektion & Ölwechsel -->
+        <div class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-500 transition shadow-sm group">
+          <div class="h-36 overflow-hidden bg-slate-200">
+            <img src="images/service-inspektion.jpg" alt="Inspektion und Ölwechsel nach Herstellervorgaben" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+          </div>
+          <div class="p-5 space-y-2">
+            <h3 class="font-bold text-navy-900 text-base flex items-center">
+              <i data-lucide="clipboard-check" class="w-4 h-4 mr-2 text-brand-600"></i> Inspektion & Ölwechsel
+            </h3>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              Kleine und große Inspektionen exakt nach Herstellervorgaben – inklusive flexibler Wartungsintervalle sowie Bremsen- und Fahrwerksservice in Erstausrüsterqualität.
+            </p>
+          </div>
+        </div>
+
+        <!-- Fahrzeugdiagnose -->
+        <div class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-500 transition shadow-sm group">
+          <div class="h-36 overflow-hidden bg-slate-200">
+            <img src="images/service-diagnose.jpg" alt="Moderne Fahrzeugdiagnose und Fehlerspeicher auslesen" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+          </div>
+          <div class="p-5 space-y-2">
+            <h3 class="font-bold text-navy-900 text-base flex items-center">
+              <i data-lucide="cpu" class="w-4 h-4 mr-2 text-brand-600"></i> Fahrzeugdiagnose & Elektronik
+            </h3>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              Detailliertes Auslesen des Fehlerspeichers mit modernsten Diagnosesystemen und Prüfsoftware für alle Fahrzeugfabrikate – für eine schnelle, gezielte Instandsetzung.
+            </p>
+          </div>
+        </div>
+
+        <!-- Achsvermessung -->
+        <div class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-500 transition shadow-sm group">
+          <div class="h-36 overflow-hidden bg-slate-200">
+            <img src="images/service-achsvermessung.jpg" alt="Moderne Achsvermessung für perfekten Geradeauslauf" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+          </div>
+          <div class="p-5 space-y-2">
+            <h3 class="font-bold text-navy-900 text-base flex items-center">
+              <i data-lucide="compass" class="w-4 h-4 mr-2 text-brand-600"></i> Achsvermessung
+            </h3>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              Präzise Vermessung und Feinjustierung der Achsgeometrie nach Herstellervorgaben. Senkt Kraftstoffverbrauch & Reifenverschleiß und sorgt für perfekten Geradeauslauf.
+            </p>
+          </div>
+        </div>
+
+        <!-- Klimaservice -->
+        <div class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-500 transition shadow-sm group">
+          <div class="h-36 overflow-hidden bg-slate-200">
+            <img src="images/service-klima.jpg" alt="Klimaservice und Wartung der Fahrzeugklimaanlage" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+          </div>
+          <div class="p-5 space-y-2">
+            <h3 class="font-bold text-navy-900 text-base flex items-center">
+              <i data-lucide="thermometer-snowflake" class="w-4 h-4 mr-2 text-brand-600"></i> Klimaservice
+            </h3>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              Jährliche Inspektion, Dichtheitsprüfung, Desinfektion gegen Bakterien & Gerüche sowie Kältemittel-Befüllung (R134a & R1234yf) für langfristig gutes Klima im Auto.
+            </p>
+          </div>
+        </div>
+
+        <!-- Unfallservice -->
+        <div class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-500 transition shadow-sm group">
+          <div class="h-36 overflow-hidden bg-slate-200">
+            <img src="images/service-unfall.jpg" alt="Unfallservice, Abschleppdienst und Unfallinstandsetzung" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+          </div>
+          <div class="p-5 space-y-2">
+            <h3 class="font-bold text-navy-900 text-base flex items-center">
+              <i data-lucide="shield-alert" class="w-4 h-4 mr-2 text-brand-600"></i> Unfallservice & Abschleppen
+            </h3>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              Wir schleppen Ihr Fahrzeug vom Unfallort ab, erstellen eine detaillierte Schadensanalyse inkl. Versicherungsdokumentation und stellen Ihnen ein <strong>Ersatzfahrzeug</strong>.
+            </p>
+          </div>
+        </div>
+
+        <!-- Reifenservice -->
+        <div class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-500 transition shadow-sm group">
+          <div class="h-36 overflow-hidden bg-slate-200">
+            <img src="images/service-reifen.jpg" alt="Reifenservice: Wechseln, Wuchten, Waschen und Einlagern" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+          </div>
+          <div class="p-5 space-y-2">
+            <h3 class="font-bold text-navy-900 text-base flex items-center">
+              <i data-lucide="disc" class="w-4 h-4 mr-2 text-brand-600"></i> Reifenservice (Pkw, Transporter & Agrar)
+            </h3>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              Kompetente Reifenberatung, <strong>Wechseln, Wuchten, Waschen & Einlagern</strong>, fachgerechte Vulkanisation, Neureifen zu Bestpreisen & Altreifen-Entsorgung.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Anhängerreparatur & Termin-CTA -->
+      <div class="bg-gradient-to-r from-slate-100 to-slate-50 rounded-2xl p-6 sm:p-8 border border-slate-200 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6">
+        <div class="space-y-2 max-w-3xl">
+          <h3 class="text-lg sm:text-xl font-bold text-navy-900 flex items-center">
+            <i data-lucide="wrench" class="w-5 h-5 mr-2 text-brand-600"></i> Anhängerreparatur, Anhänger-HU & Individuelle Umbauten
+          </h3>
+          <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+            Wir reparieren Anhänger aller Fabrikate: Bremsen, Leuchten & Scheinwerfer, Kotflügel, Reifen und Rahmen. Inklusive gründlicher <strong>Vorabprüfung für die Hauptuntersuchung</strong>, detailliertem Kostenvoranschlag sowie normgerechten Um- und Anbauten nach Ihren Wünschen.
+          </p>
+        </div>
+        <div class="flex-shrink-0">
+          <a href="tel:03965257872" class="inline-flex items-center bg-navy-900 hover:bg-navy-800 text-white font-bold px-5 py-3.5 rounded-xl transition text-sm shadow whitespace-nowrap">
+            <i data-lucide="calendar" class="w-4 h-4 mr-2 text-amber-400"></i> Werkstatt-Termin: 03965 257872
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- NEUER BEREICH: LANDTECHNIK & AGRAR-SERVICE -->
+  <section id="landtechnik" class="py-16 bg-slate-100 border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+        
+        <!-- Echtes Foto BFL Burow Betriebsgelände -->
+        <div class="lg:col-span-5">
+          <div class="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-md">
+            <img src="images/bfl-werkstatt.jpg" alt="BFL Burow Werkstattgebäude und John Deere Traktoren in der Seltzer Straße 4" class="w-full h-72 object-cover">
+            <div class="p-4 bg-slate-50 border-t border-slate-200 flex items-center justify-between text-xs text-slate-600">
+              <span class="font-semibold text-navy-900">BFL Betriebsgelände in Burow</span>
+              <span class="text-brand-700 font-bold">John Deere & Alle Fabrikate</span>
             </div>
+          </div>
+        </div>
 
-            <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
+        <!-- Landtechnik Leistungen -->
+        <div class="lg:col-span-7 space-y-5">
+          <div class="inline-flex items-center space-x-2 text-green-800 bg-green-100 px-3 py-1 rounded-full text-xs font-bold uppercase">
+            <i data-lucide="tractor" class="w-3.5 h-3.5"></i> Landtechnik & Agrar-Werkstatt
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-black text-navy-900">
+            Landtechnik-Service & 24/7 Ernte-Notdienst
+          </h2>
+          <p class="text-slate-600 text-base leading-relaxed">
+            Wir führen Wartungen und Kundendienste an Ihrem <strong>John Deere Schlepper</strong> durch und kümmern uns selbstverständlich auch um Reparaturen <strong>aller anderen Fabrikate</strong>. Durch unser großes Waren- und Ersatzteillager stehen viele Teile sofort bereit – damit Ihre Arbeit ohne lange Standzeiten weitergeht.
+          </p>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm">
               <h4 class="font-bold text-navy-900 text-sm mb-1 flex items-center">
-                <i data-lucide="thermometer-snowflake" class="w-4 h-4 mr-2 text-brand-600"></i> Klimaservice
+                <i data-lucide="phone-call" class="w-4 h-4 mr-2 text-brand-600"></i> Ernte-Notdienst (24/7)
               </h4>
-              <p class="text-xs text-slate-500">Wartung, Dichtheitsprüfung & Kältemittel-Befüllung (R134a & R1234yf).</p>
+              <p class="text-xs text-slate-600">Während der Erntezeit sind wir telefonisch rund um die Uhr für Sie erreichbar.</p>
+            </div>
+            <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm">
+              <h4 class="font-bold text-navy-900 text-sm mb-1 flex items-center">
+                <i data-lucide="clock" class="w-4 h-4 mr-2 text-brand-600"></i> Bestellservice bis 20:00 Uhr
+              </h4>
+              <p class="text-xs text-slate-600">Durch unsere John Deere Kooperation geben wir Ersatzteil-Bestellungen täglich bis 20:00 Uhr auf.</p>
             </div>
           </div>
 
           <div class="pt-2">
-            <a href="tel:03965257872" class="inline-flex items-center bg-navy-900 hover:bg-navy-800 text-white font-bold px-5 py-3 rounded-xl transition text-sm">
-              <i data-lucide="calendar" class="w-4 h-4 mr-2 text-amber-400"></i> Werkstatt-Termin vereinbaren: 03965 257872
-            </a>
-          </div>
-        </div>
-
-        <div class="lg:col-span-5">
-          <div class="bg-gradient-to-br from-slate-100 to-slate-200 rounded-2xl p-6 border border-slate-200 space-y-4">
-            <h3 class="text-lg font-bold text-navy-900">Reifenservice für Pkw, Transporter & Agrar</h3>
-            <p class="text-xs text-slate-600 leading-relaxed">
-              Vom saisonalen Radwechsel über Reifenreparaturen bis hin zu Neureifen aller namhaften Hersteller. Auch Montage von Transporter- und Landwirtschaftsreifen!
-            </p>
-            <ul class="text-xs text-slate-700 space-y-2">
-              <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 mr-2 text-brand-600"></i> Radwechsel & Auswuchten</li>
-              <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 mr-2 text-brand-600"></i> Fachgerechte Reifenreparatur (Vulkanisation)</li>
-              <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 mr-2 text-brand-600"></i> Neureifen-Verkauf zu tagesaktuellen Bestpreisen</li>
-              <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 mr-2 text-brand-600"></i> Altreifen-Entsorgung</li>
-            </ul>
+            <span class="block text-xs font-bold uppercase text-slate-500 mb-2">Unsere Landtechnik-Partner & Marken:</span>
+            <div class="flex flex-wrap gap-2">
+              <a href="https://www.deere.de" target="_blank" rel="noopener noreferrer" class="px-3.5 py-1.5 rounded-lg bg-white border border-slate-200 hover:border-green-600 text-xs font-bold text-navy-900 transition shadow-sm">John Deere</a>
+              <a href="https://www.lemken.com" target="_blank" rel="noopener noreferrer" class="px-3.5 py-1.5 rounded-lg bg-white border border-slate-200 hover:border-blue-600 text-xs font-bold text-navy-900 transition shadow-sm">LEMKEN</a>
+              <a href="https://www.lely.com" target="_blank" rel="noopener noreferrer" class="px-3.5 py-1.5 rounded-lg bg-white border border-slate-200 hover:border-red-600 text-xs font-bold text-navy-900 transition shadow-sm">Lely</a>
+              <a href="https://www.hawart-landtechnik.de" target="_blank" rel="noopener noreferrer" class="px-3.5 py-1.5 rounded-lg bg-white border border-slate-200 hover:border-brand-600 text-xs font-bold text-navy-900 transition shadow-sm">Hawart Landtechnik</a>
+            </div>
           </div>
         </div>
 
@@ -454,65 +699,73 @@
     </div>
   </section>
 
-  <!-- BEREICH 2: BAGGERARBEITEN & MIETPARK -->
-  <section id="bagger-verleih" class="py-16 bg-slate-100 border-b border-slate-200">
+  <!-- BEREICH 2: BAGGERARBEITEN, BAUMASCHINENVERMIETUNG & SANY-VERKAUF -->
+  <section id="bagger-verleih" class="py-16 bg-white border-b border-slate-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <div class="text-center max-w-3xl mx-auto mb-12">
         <div class="inline-flex items-center space-x-2 text-amber-700 bg-amber-100 px-3 py-1 rounded-full text-xs font-bold uppercase mb-3">
-          <i data-lucide="truck" class="w-3.5 h-3.5"></i> Erdarbeiten & Geräteverleih
+          <i data-lucide="truck" class="w-3.5 h-3.5"></i> Vertrieb, Vermietung & Erdarbeiten
         </div>
         <h2 class="text-3xl sm:text-4xl font-black text-navy-900">
-          Baggerarbeiten & Maschinenverleih
+          Baumaschinen: Verkauf, Verleih & Baggerarbeiten
         </h2>
         <p class="mt-3 text-slate-600 text-base">
-          Sie planen ein Bau- oder Gartenprojekt? Wir führen <strong>Baggerarbeiten mit erfahrenem Fahrer</strong> für Sie aus – oder vermieten leistungsfähige Baumaschinen für Selbermacher!
+          Ob <strong>Baggerarbeiten mit erfahrenem Fahrer</strong>, kurzfristige <strong>Baumaschinenvermietung</strong> für Selbermacher oder der Kauf neuer <strong>SANY Baumaschinen</strong> – wir sind Ihr Ansprechpartner in Burow!
         </p>
       </div>
 
       <!-- 2-Spalten: Ausführung vs. Verleih -->
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
         
         <!-- Baggerarbeiten mit Fahrer -->
-        <div class="bg-white rounded-2xl p-6 sm:p-8 border border-slate-200 shadow-sm space-y-4">
-          <div class="w-12 h-12 rounded-xl bg-amber-100 text-amber-700 flex items-center justify-center font-black">
-            <i data-lucide="hard-hat" class="w-6 h-6"></i>
+        <div class="bg-slate-50 rounded-2xl p-6 sm:p-8 border border-slate-200 shadow-sm space-y-4 flex flex-col justify-between">
+          <div class="space-y-4">
+            <div class="w-12 h-12 rounded-xl bg-amber-100 text-amber-700 flex items-center justify-center font-black">
+              <i data-lucide="hard-hat" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-xl font-bold text-navy-900">1. Baggerarbeiten als Dienstleistung</h3>
+            <p class="text-sm text-slate-600 leading-relaxed">
+              Keine Zeit oder Erfahrung, selbst auf dem Bagger zu sitzen? Wir erledigen Ihre Erdarbeiten sauber, schnell und termintreu:
+            </p>
+            <ul class="text-xs sm:text-sm text-slate-700 space-y-2">
+              <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 mr-2 text-amber-600"></i> Aushub für Fundamente, Terrassen & Poolanlagen</li>
+              <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 mr-2 text-amber-600"></i> Gräben für Rohre, Kabel, Entwässerung & Zuleitungen</li>
+              <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 mr-2 text-amber-600"></i> Wurzelrodung & Geländemodellierung</li>
+              <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 mr-2 text-amber-600"></i> Planierarbeiten & Schottereinbau</li>
+            </ul>
           </div>
-          <h3 class="text-xl font-bold text-navy-900">1. Baggerarbeiten als Dienstleistung</h3>
-          <p class="text-sm text-slate-600 leading-relaxed">
-            Keine Zeit oder Erfahrung, selbst auf dem Bagger zu sitzen? Wir erledigen Ihre Erdarbeiten sauber, schnell und termintreu:
-          </p>
-          <ul class="text-xs sm:text-sm text-slate-700 space-y-2">
-            <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 mr-2 text-amber-600"></i> Aushub für Fundamente, Terrassen & Poolanlagen</li>
-            <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 mr-2 text-amber-600"></i> Gräben für Rohre, Kabel, Entwässerung & Zuleitungen</li>
-            <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 mr-2 text-amber-600"></i> Wurzelrodung & Geländemodellierung</li>
-            <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 mr-2 text-amber-600"></i> Planierarbeiten & Schottereinbau</li>
-          </ul>
-          <div class="pt-2">
+          <div class="pt-4">
             <a href="tel:03965257872" class="inline-flex items-center text-amber-700 font-bold text-sm hover:underline">
               Bagger-Einsatz besprechen <i data-lucide="arrow-right" class="w-4 h-4 ml-1"></i>
             </a>
           </div>
         </div>
 
-        <!-- Maschinenverleih (Selbstfahrer) -->
-        <div class="bg-white rounded-2xl p-6 sm:p-8 border border-slate-200 shadow-sm space-y-4">
-          <div class="w-12 h-12 rounded-xl bg-brand-100 text-brand-700 flex items-center justify-center font-black">
-            <i data-lucide="key" class="w-6 h-6"></i>
+        <!-- Maschinenverleih (Selbstfahrer) mit echtem BFL-Hofbild -->
+        <div class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="h-44 bg-slate-200 overflow-hidden relative">
+              <img src="images/baumaschinen.jpg" alt="SANY Minibagger Mietpark bei BFL Burow" class="w-full h-full object-cover">
+              <span class="absolute top-3 left-3 bg-brand-700/90 text-white font-bold text-[11px] px-2.5 py-1 rounded-md uppercase">
+                Mietpark Burow
+              </span>
+            </div>
+            <div class="p-6 sm:p-8 space-y-4">
+              <h3 class="text-xl font-bold text-navy-900">2. Baumaschinenvermietung (Mietpark)</h3>
+              <p class="text-sm text-slate-600 leading-relaxed">
+                <strong>Minibagger von 1,8 t und 2,6 t</strong> können Sie kurzfristig nach Absprache mieten – weitere Baumaschinengrößen auf Anfrage mit Vorlaufzeit!
+              </p>
+              <ul class="text-xs sm:text-sm text-slate-700 space-y-2">
+                <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 mr-2 text-brand-600"></i> <strong>Minibagger 1,8 t & 2,6 t</strong> (inkl. Graben- & Tieflöffel)</li>
+                <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 mr-2 text-brand-600"></i> <strong>Kompaktradlader</strong> (für Erdbewegung, Schüttgüter & Hofarbeiten)</li>
+                <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 mr-2 text-brand-600"></i> <strong>Hubsteiger / Arbeitsbühne (12 m Hubhöhe)</strong> (Dach, Fassade, Baumschnitt)</li>
+                <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 mr-2 text-brand-600"></i> <strong>Profi-Holzhäcksler</strong> (für Astwerk & Gehölz bis 12 cm Ø)</li>
+                <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 mr-2 text-brand-600"></i> <strong>Rüttelplatten (100 kg & 200 kg reversierbar)</strong> & Maschinentransporter</li>
+              </ul>
+            </div>
           </div>
-          <h3 class="text-xl font-bold text-navy-900">2. Maschinenverleih (Mietpark)</h3>
-          <p class="text-sm text-slate-600 leading-relaxed">
-            Für Bauherren, Gartenfreunde und Betriebe: Mieten Sie gepflegte Profigeräte zu fairen Tages- und Wochenendtarifen:
-          </p>
-          <ul class="text-xs sm:text-sm text-slate-700 space-y-2">
-            <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 mr-2 text-brand-600"></i> <strong>Minibagger 1,8 t</strong> (inkl. Graben- & Tieflöffel)</li>
-            <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 mr-2 text-brand-600"></i> <strong>Kompaktradlader</strong> (für Erdbewegung, Schüttgüter & Hofarbeiten)</li>
-            <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 mr-2 text-brand-600"></i> <strong>Hubsteiger / Arbeitsbühne (12 m Hubhöhe)</strong> (Dach, Fassade, Baumschnitt)</li>
-            <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 mr-2 text-brand-600"></i> <strong>Profi-Holzhäcksler</strong> (für Astwerk & Gehölz bis 12 cm Ø)</li>
-            <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 mr-2 text-brand-600"></i> <strong>Rüttelplatten (100 kg & 200 kg reversierbar)</strong> mit Pflasterschutz</li>
-            <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 mr-2 text-brand-600"></i> <strong>Maschinentransporter</strong> mit Auffahrrampen</li>
-          </ul>
-          <div class="pt-2">
+          <div class="px-6 sm:px-8 pb-6 sm:pb-8">
             <a href="tel:03965257872" class="inline-flex items-center text-brand-700 font-bold text-sm hover:underline">
               Mietgerät reservieren <i data-lucide="arrow-right" class="w-4 h-4 ml-1"></i>
             </a>
@@ -521,11 +774,42 @@
 
       </div>
 
+      <!-- 3. SANY Baumaschinenverkauf (Highlight-Banner von bfl-burow.de/baumaschinen) -->
+      <div class="bg-navy-900 text-white rounded-2xl overflow-hidden shadow-lg border border-slate-800">
+        <div class="grid grid-cols-1 lg:grid-cols-12 items-center">
+          <div class="lg:col-span-7 p-6 sm:p-10 space-y-4">
+            <div class="flex flex-wrap items-center gap-3">
+              <div class="bg-white px-3 py-1.5 rounded-lg inline-flex items-center">
+                <img src="images/sany-logo.jpg" alt="SANY Baumaschinen Logo" class="h-6 object-contain">
+              </div>
+              <span class="bg-red-600 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">
+                5 Jahre oder 10.000 Std. Garantie
+              </span>
+            </div>
+            <h3 class="text-2xl sm:text-3xl font-black">3. SANY Baumaschinen-Verkauf</h3>
+            <p class="text-sm sm:text-base text-slate-300 leading-relaxed">
+              Sicherheit, Komfort und Ergonomie sind die Attribute, die das Arbeiten mit SANY am besten beschreiben. Die umfangreiche SANY Produktrange – darunter der neue <strong>SANY Radlader SW 405</strong> sowie kompakte Mini- und Mobilbagger – ist mit modernster Technik ausgestattet und überzeugt durch höchste Wirtschaftlichkeit.
+            </p>
+            <div class="pt-2 flex flex-wrap gap-3">
+              <a href="tel:03965257872" class="inline-flex items-center bg-brand-600 hover:bg-brand-500 text-white font-bold px-5 py-3 rounded-xl transition text-sm shadow">
+                <i data-lucide="phone-call" class="w-4 h-4 mr-2"></i> SANY Beratung anfragen
+              </a>
+              <a href="https://wa.me/491717235230" target="_blank" rel="noopener noreferrer" class="inline-flex items-center bg-white/10 hover:bg-white/20 text-white font-semibold px-5 py-3 rounded-xl border border-white/20 transition text-sm">
+                <i data-lucide="message-circle" class="w-4 h-4 mr-2 text-brand-400"></i> Per WhatsApp anfragen
+              </a>
+            </div>
+          </div>
+          <div class="lg:col-span-5 h-64 lg:h-full">
+            <img src="images/angebot-sany-radlader.jpg" alt="SANY Radlader SW 405 im Einsatz" class="w-full h-full object-cover">
+          </div>
+        </div>
+      </div>
+
     </div>
   </section>
 
   <!-- BEREICH 3: GARTENGERÄTE FACHHANDEL (KRESS, SOLO, HERKULES) -->
-  <section id="gartengeraete" class="py-16 sm:py-20 bg-white border-b border-slate-200">
+  <section id="gartengeraete" class="py-16 sm:py-20 bg-slate-100 border-b border-slate-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <div class="text-center max-w-3xl mx-auto mb-12">
@@ -632,7 +916,7 @@
   </section>
 
   <!-- BEREICH 4: SCHLEIFEREI & HYDRAULIK SERVICE -->
-  <section id="services" class="py-16 bg-slate-100 border-b border-slate-200">
+  <section id="services" class="py-16 bg-white border-b border-slate-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -678,7 +962,7 @@
   </section>
 
   <!-- KONTAKT & ANFAHRT -->
-  <section id="kontakt" class="py-16 sm:py-20 bg-white">
+  <section id="kontakt" class="py-16 sm:py-20 bg-slate-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <div class="text-center max-w-3xl mx-auto mb-12">
@@ -693,11 +977,16 @@
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
         
         <!-- Kontaktdaten Box -->
-        <div class="lg:col-span-5 bg-slate-50 rounded-2xl p-6 sm:p-8 border border-slate-200 space-y-6">
-          <div class="space-y-1">
-            <h3 class="text-xl font-bold text-navy-900">BFL Burower Fahrzeug- und Landtechnik GmbH</h3>
-            <span class="text-xs text-slate-500 font-semibold block">Werkstatt · Landtechnik · Gartengeräte · Maschinenverleih</span>
-            <span class="text-xs text-brand-700 font-semibold block">Geschäftsführer: Otto Günther · Werkstattleitung: Markus Klein</span>
+        <div class="lg:col-span-5 bg-white rounded-2xl p-6 sm:p-8 border border-slate-200 shadow-sm space-y-6">
+          <div class="flex items-center gap-4 pb-4 border-b border-slate-100">
+            <div class="w-16 h-16 bg-white rounded-xl border border-slate-200 p-1.5 flex items-center justify-center flex-shrink-0 shadow-sm">
+              <img src="images/bfl-logo.jpg" alt="Offizielles Logo BFL Burower Fahrzeug- und Landtechnik GmbH" class="max-w-full max-h-full object-contain">
+            </div>
+            <div class="space-y-1">
+              <h3 class="text-lg font-bold text-navy-900 leading-tight">BFL Burower Fahrzeug- und Landtechnik GmbH</h3>
+              <span class="text-xs text-slate-500 font-semibold block">Werkstatt · Landtechnik · Baumaschinen · Gartengeräte</span>
+              <span class="text-xs text-brand-700 font-semibold block">GF: Otto Günther · Werkstattleitung: Markus Klein</span>
+            </div>
           </div>
           
           <div class="space-y-4 text-sm text-slate-700">
@@ -740,6 +1029,14 @@
                 <strong>Werkstatt-Öffnungszeiten:</strong><br>
                 Montag – Freitag: 07:00 – 17:00 Uhr<br>
                 Samstag: nach Vereinbarung
+              </div>
+            </div>
+
+            <div class="flex items-start space-x-3">
+              <i data-lucide="badge-check" class="w-5 h-5 text-brand-600 flex-shrink-0 mt-0.5"></i>
+              <div>
+                <strong>Hauptuntersuchung (HU & AU):</strong><br>
+                Montag und Donnerstag: nach Vereinbarung
               </div>
             </div>
           </div>
@@ -806,11 +1103,11 @@
         <div>
           <h4 class="text-white font-bold text-sm mb-3">Leistungen</h4>
           <ul class="space-y-1.5 text-xs">
-            <li><a href="#kfz-werkstatt" class="hover:text-white transition">Kfz-Reparatur & TÜV</a></li>
-            <li><a href="#bagger-verleih" class="hover:text-white transition">Baggerarbeiten mit Fahrer</a></li>
-            <li><a href="#bagger-verleih" class="hover:text-white transition">Maschinenverleih / Mietpark</a></li>
-            <li><a href="#services" class="hover:text-white transition">Schleiferei für Messer & Scheren</a></li>
-            <li><a href="#services" class="hover:text-white transition">Hydraulik- & Reifenservice</a></li>
+            <li><a href="#angebote" class="hover:text-white transition">Aktuelle Angebote (SANY & Kettensägen)</a></li>
+            <li><a href="#kfz-werkstatt" class="hover:text-white transition">Kfz-Reparatur, Achsvermessung & HU</a></li>
+            <li><a href="#landtechnik" class="hover:text-white transition">Landtechnik & John Deere Service</a></li>
+            <li><a href="#bagger-verleih" class="hover:text-white transition">Baggerarbeiten, SANY Kauf & Mietpark</a></li>
+            <li><a href="#services" class="hover:text-white transition">Schleiferei & Hydraulik-Sofortservice</a></li>
           </ul>
         </div>
 
